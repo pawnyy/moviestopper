@@ -63,7 +63,7 @@ def key_handler(e):
         return
     if not e.name in keyboard_keys:
         return
-    if "FiveM" not in GetWindowText(GetForegroundWindow()):
+    if game not in GetWindowText(GetForegroundWindow()):
         return
     if mediaIs("PLAYING") and e.event_type == "down":
         keyboard.send(key)
